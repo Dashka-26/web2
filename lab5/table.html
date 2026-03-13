@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+<div class="max-w-5xl mx-auto">
+  <div class="flex justify-between items-center mb-4 text-sm">
+    <div class="text-gray-500">
+      0 selected
+    </div>
+    <div class="flex items-center gap-6 text-gray-700 font-medium cursor-pointer">
+      <div class="flex items-center gap-1 hover:text-gray-900 transition-colors">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M7 12h10m-6 6h2"/></svg>
+        <span>Sort by</span>
+      </div>
+      <div class="flex items-center gap-1 hover:text-gray-900 transition-colors">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M12 6h.01M12 12h.01M12 18h.01"/></svg>
+        <span>Actions</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="text-gray-500 border-b border-gray-200">
+        <tr>
+          <th class="py-3 px-4 font-medium text-left w-16">
+            <div class="flex items-center gap-1">
+              <input type="checkbox" class="border-gray-300 border-t-2 rounded">
+              <svg class="w-4 h-4 text-gray-400" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 14.708L6.692 9.4l.708-.708l4.6 4.6l4.6-4.6l.708.708z"/></svg>
+            </div>
+          </th>
+          <th class="py-3 px-4 font-medium text-left">Name</th>
+          <th class="py-3 px-4 font-medium text-right">Properties</th>
+          <th class="py-3 px-4 font-medium text-right">Created by</th>
+          <th class="py-3 px-4 font-medium text-left">Last updated</th>
+          <th class="py-3 px-4 font-medium text-right"></th>
+        </tr>
+        </thead>
+
+        <tbody class="text-gray-700">
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <td class="py-4 px-4 text-left">
+            <input type="checkbox" class="border-gray-300 rounded">
+          </td>
+          <td class="py-4 px-4 text-left font-medium text-gray-900">denver</td>
+          <td class="py-4 px-4 text-right">24</td>
+          <td class="py-4 px-4 text-right">Me</td>
+          <td class="py-4 px-4 text-left text-gray-500">02/27/2026 at 1:41PM</td>
+          <td class="py-4 px-4 text-right">
+            <button class="text-gray-400 hover:text-gray-700 transition-colors">
+              <svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M12 6h.01M12 12h.01M12 18h.01"/></svg>
+            </button>
+          </td>
+        </tr>
+
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <td class="py-4 px-4 text-left">
+            <input type="checkbox" class="border-gray-300 rounded">
+          </td>
+          <td class="py-4 px-4 text-left font-medium text-gray-900">test save</td>
+          <td class="py-4 px-4 text-right">10</td>
+          <td class="py-4 px-4 text-right">Me</td>
+          <td class="py-4 px-4 text-left text-gray-500">02/10/2026 at 5:52PM</td>
+          <td class="py-4 px-4 text-right">
+            <button class="text-gray-400 hover:text-gray-700 transition-colors"><svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M12 6h.01M12 12h.01M12 18h.01"/></svg></button>
+          </td>
+        </tr>
+
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <td class="py-4 px-4 text-left">
+            <input type="checkbox" class="border-gray-300 rounded">
+          </td>
+          <td class="py-4 px-4 text-left font-medium text-gray-900">gggg</td>
+          <td class="py-4 px-4 text-right">10</td>
+          <td class="py-4 px-4 text-right">Me</td>
+          <td class="py-4 px-4 text-left text-gray-500">02/04/2026 at 5:49PM</td>
+          <td class="py-4 px-4 text-right">
+            <button class="text-gray-400 hover:text-gray-700 transition-colors"><svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M12 6h.01M12 12h.01M12 18h.01"/></svg></button>
+          </td>
+        </tr>
+
+        <tr class="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+          <td class="py-4 px-4 text-left">
+            <input type="checkbox" class="border-gray-300 rounded">
+          </td>
+          <td class="py-4 px-4 text-left font-medium text-gray-900">test full export</td>
+          <td class="py-4 px-4 text-right">4059</td>
+          <td class="py-4 px-4 text-right">Me</td>
+          <td class="py-4 px-4 text-left text-gray-500">02/02/2026 at 11:19AM</td>
+          <td class="py-4 px-4 text-right">
+            <button class="text-gray-400 hover:text-gray-700 transition-colors"><svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M12 6h.01M12 12h.01M12 18h.01"/></svg></button>
+          </td>
+        </tr>
+
+        <tr class="hover:bg-gray-50 transition-colors">
+          <td class="py-4 px-4 text-left">
+            <input type="checkbox" class="border-gray-300 rounded">
+          </td>
+          <td class="py-4 px-4 text-left font-medium text-gray-900">denver 1</td>
+          <td class="py-4 px-4 text-right">14</td>
+          <td class="py-4 px-4 text-right">Me</td>
+          <td class="py-4 px-4 text-left text-gray-500">01/23/2026 at 9:20AM</td>
+          <td class="py-4 px-4 text-right">
+            <button class="text-gray-400 hover:text-gray-700 transition-colors"><svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" d="M12 6h.01M12 12h.01M12 18h.01"/></svg></button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="border-t border-gray-100 p-4 flex justify-between items-center text-sm text-gray-500 bg-white">
+      <div class="flex items-center gap-2">
+        <span>Show</span>
+        <input type="text" value="5" class="w-8 py-1 px-2 text-center border border-gray-200 rounded text-gray-700 outline-none cursor-pointer hover:border-gray-300">
+        <span>of 5 results</span>
+      </div>
+      <div class="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-b from-[#b4f9a0] via-[#4ee163] to-[#30e3ca] p-[2px]">
+        <button class="w-full h-full rounded-full bg-[#e9ffea] flex items-center justify-center text-gray-800 font-bold text-lg cursor-pointer">1</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
